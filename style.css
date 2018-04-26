@@ -1,0 +1,45 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+html * {
+    font-family: monospace;
+}
+.toolbar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-bottom: 6px solid black;
+}
+.toolbar__option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    height: 80%;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 120px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 6px solid black;
+    box-sizing: border-box;
+}
+.toolbar__option--add-box {
+    background-color: green;
+}
+.toolbar__option--delete-box {
+    background-color: red;
+}
+
+.boxes {
+    position: relative;
+}
+.boxes__box {
+    border: 6px dashed black;
+    box-sizing: border-box;
+}
+.boxes__box:hover {
+    border: 10px dashed black;
+}
